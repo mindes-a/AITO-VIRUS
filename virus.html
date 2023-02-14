@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AITO VIRUS</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="virus.css">
+</head>
+<body>
+	<center>
+	<div class="header">
+
+<h1 class="title">AITO Virus ver1.0</h1>
+
+
+		<p class="sentence">起動するタブの数</p>
+
+
+		<input type="number" class="number" id="number">
+
+		<div>
+		<button class="btn" id="btn">起動</button>
+		</div>
+
+	</div>
+	</center>
+</body>
+<script type="text/javascript">
+let btn = document.getElementById("btn");
+btn.addEventListener("click",function(){
+	var res = confirm("起動します。\n発生した不利益はすべて自己責任となります。");
+    if( res == true ) {
+        // 起動
+let number = document.getElementById("number").value;
+         for(i=0;i<number;i++){
+		window.open("mini.html");
+　　　}	
+    }
+    else {
+        alert("キャンセルしました。");
+    }
+})
+	
+   //    for(i=0;i<10;i++){
+		//	window.open("mini.html");
+	//}	
+</script>
+</html>
